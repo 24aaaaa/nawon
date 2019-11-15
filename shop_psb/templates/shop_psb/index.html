@@ -11,75 +11,94 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  .nav-pills .pill-1 .nav-link:not(.active) {
-    background-color: rgba(255, 255, 255, 0);
-    color: gray;
-  }
-  .nav-pills .pill-1 .nav-link {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+
+<style>
+
+body {
+    -webkit-animation: colorchange 5s infinite;
+    animation: colorchange 5s infinite;
 }
 
-  </style>
+
+@-webkit-keyframes colorchange {
+
+     0%  {background: #344E81;}
+    25%  {background: #5872A5;}
+    50%  {background: #7C96C9;}
+    75%  {background: #A0BAED;}
+    100% {background: #C4DEFF;}
+}
+
+
+@keyframes colorchange {
+     0%  {background: #344E81;}
+    25%  {background: #5872A5;}
+    50%  {background: #7C96C9;}
+    75%  {background: #A0BAED;}
+    100% {background: #FFFFFF;}
+}
+
+</style>
+
+
 </head>
 <body>
 
+<body bgcolor"=#B7F0B1">
+
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Rabbit Eye</h1>
-  <p>Paper Shopping Bag</p>
+   <html>
+    <head>
+        <meta charset="utf-8">
+        </head>
+        <body>
+            <font size="12" color="#5872A5">Persona</font>
+        </body>
+        </head>
+    </html>
+   <p>
+   <html>
+    <head>
+        <meta charset="utf-8">
+        </head>
+        <body>
+            <font size="4" color="#A0BAED">Movie Recommendation</font>
+        </body>
+        </head>
+    </html>
+    </p>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+    <style>
+        body {
+
+            background color:#C4DEFF;
+      }
+    </style>
+  <a class="navbar-brand" href="http://gowjd4419.pythonanywhere.com/">Top 10</a>
+  <a class="navbar-brand" href="https://www.imdb.com/movies-in-theaters/?ref_=nv_mv_inth">In Theaters</a>
+  <a class="navbar-brand" href="https://www.imdb.com/movies-coming-soon/?ref_=nv_mv_cs">Coming Soon</a>
+  <a class="navbar-brand" href="https://www.imdb.com/calendar/?ref_=nv_mv_cal">Release Calendar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">종이</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">로고인쇄</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">끈</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">기성품</a>
-      </li>
-    </ul>
-  </div>
 </nav>
 
 {% load static %}
 <div class="container-fluid" style="margin:30px">
    <div class="row">
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=_Y9EpOL7dmw';"><img src="https://m.media-amazon.com/images/M/MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="Harry Potter:Deathly Hallows part 2">
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=F9Cuj4Q0P-0';"><img src="https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UY209_CR0,0,140,209_AL_.jpg" width="200" title="Frozen II" >
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=sXjwpMDrMnY';"><img src="https://m.media-amazon.com/images/M/MV5BZjJiYTExOTAtNWU0Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" width="200" title="Maleficent: Mistress of Evil" >
       </div>
       <div class="col-sm-3">
-      <div class="btn-group-vertical"  style="margin-left:30px;">
-        <button type="button" class="btn btn-secondary">견젹문의&nbsp;<i class='far fa-address-card'></i></button>
-        <button type="button" class="btn btn-outline-secondary">발주문의&nbsp;<i class='far fa-address-card'></i></button>
-        <button type="button" class="btn btn-outline-secondary">웹하드&nbsp;<i class='fas fa-download'></i></button>
-        <button type="button" class="btn btn-outline-secondary">계좌번호&nbsp;<i class='fas fa-won-sign'></i></button>
-        <button type="button" class="btn btn-outline-secondary">고객센터&nbsp;<i class='fas fa-phone'></i></button>
-      </div>
+        <a href='https://www.youtube.com/watch?v=8R7XW5NoxlA';"><img src="https://resizing.flixster.com/XQzDP6IQYFmcZu0oZkJjHzd3cU8=/fit-in/200x296.2962962962963/v1.bTsxMzAyMzkxNjtqOzE4Mjg1OzEyMDA7MTA4NjsxNjA5" width="200" title="TOY STORY 4" >
       </div>
     </div>
 </div>
@@ -87,34 +106,35 @@
 <div class="container-fluid" style="margin:30px">
    <div class="row">
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=WzoU2ydEbv0';"><img src="https://m.media-amazon.com/images/M/MV5BODBjOTAzZmMtNGJkOC00M2M3LWI1MTctZjZlMzdiODBkMzc0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY209_CR0,0,140,209_AL_.jpg" width="200" title="The Addams Family" >
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=w3NMBvSo7j4';"><img src="https://m.media-amazon.com/images/M/MV5BYjcwNjZhNGYtOGNlNy00NGI3LTlmODMtMGZlMjA3YjA0Njg0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" width="200" title="Zombie Land: Double Tap" >
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=ty1XzpkAAQA';"><img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="The Dark Knight" >
       </div>
-     <div class="col-sm-3">
+      <div class="col-sm-3">
+        <a href='https://www.youtube.com/watch?v=57ierhIbeeg';"><img src="https://m.media-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="The Hunger Games: Mockingjay - Part 2" >
+      </div>
      </div>
    </div>
+</div>
+
+<div class="container-fluid" style="margin:30px">
    <div class="row">
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=x60mB0zXZ38';"><img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="Joker" >
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=SC8uFkGlyww';"><img src="https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY268_CR1,0,182,268_AL_.jpg" width="200" title="Fast & Furious Presents">
       </div>
       <div class="col-sm-3">
-        <img src="{% static 'shop_psb/images/testimage2.jpg' %}" class="img-thumbnail" alt="Paper Shopping Bag" width="250" >
-        <p class="text-center"><small>아트지/30*40/실크인쇄</small></p>
+        <a href='https://www.youtube.com/watch?v=PVP5ZJuI57c';"><img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="Avengers: Endgame" >
       </div>
-     <div class="col-sm-3">
+      <div class="col-sm-3">
+        <a href='https://www.youtube.com/watch?v=2DWIexD6qgA';"><img src="https://m.media-amazon.com/images/M/MV5BMTBjMjY0ODEtZGVkMy00MjUyLTlkMjAtNDBmNzVjOTk0NzQyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" title="Orphan" >
+      </div>
      </div>
    </div>
 </div>
@@ -124,48 +144,35 @@
 <div class="container" style="margin-top:60px">
   <div class="row">
     <div class="col-sm-4">
-      <h2>About Rabbit Eye</h2>
-      <h5>Paper Shopping Bag</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>종이쇼핑백의 모든 것을 취급하는 종합 종이쇼핑백 홈페이지입니다.</p>
-      <h3>Some Links</h3>
-      <p>Product.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item pill-1">
-          <a class="nav-link active" href="#">비닐백</a>
-        </li>
-        <li class="nav-item pill-1">
-          <a class="nav-link" href="#">종이박스</a>
-        </li>
-        <li class="nav-item pill-1">
-          <a class="nav-link" href="#">책자인쇄</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
+      <h3>Today moives</h3>
+      <img src="https://m.media-amazon.com/images/M/MV5BZjJiYTExOTAtNWU0Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" width="200" height="300" >
+        <p class="text-center"><big>Maleficent</big></p>
+      </div>
+      <div class="col-sm-4">
+      <h3>Pesona Recommendation</h3>
+      <ul class="flex-column">
+        <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" width="200" height="300" >
+        <p class="text-center"><big>Joker</big></p>
       </ul>
       <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>About DongSung Printing Co., Ltd.</h2>
-      <h5>Since, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>옵셋인쇄전문</p>
-      <p>동성프린팅은 1988년 개인사업자를 시작으로... 다수의 쇼핑백 전문 회사입니다.동성프린팅은 1988년 개인사업자를 시작으로... 다수의 쇼핑백 전문 회사입니다.동성프린팅은 1988년 개인사업자를 시작으로... 다수의 쇼핑백 전문 회사입니다.동성프린팅은 1988년 개인사업자를 시작으로... 다수의 쇼핑백 전문 회사입니다.</p>
-      <br>
-      <h2>CEO Greeting</h2>
-      <h5>Welcome</h5>
-      <div class="fakeimg">Fake Image</div>
+    </div><br><div class="col-sm-8">
+      <h2>Advertisement</h2>
+      <img src="https://i.imgur.com/uuLxBkZ.jpg" width="600" height="300">
+      <p class="text-center"><big>Oral-B</big></p>
+      </div><br>
+     <div class="col-sm-4">
+      <h2>About Persona</h2>
+      <h5>We're Movie Recommendation site. </h5>
       <p>Some text..</p>
-      <p>땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.땡굴이입니다.감사합니다.</p>
+      <p>Persona score are the world’s most trusted recommendation resources for quality entertainment. we provide fans with a comprehensive guide to what’s Fresh – and what’s Rotten – in theaters and at home. And the Persona is just the beginning. We also serve movie fans with original editorial content on our site and through social channels, produce fun and informative video series, and hold live events for fans across the country, with our ‘Your Opinion Sucks’ live shows. If you’re an entertainment fan looking for a recommendation, or to share an opinion, you’ve come to the right place..</p>
     </div>
   </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Footer</p>
-  <p><small>상호:래빗아이 대표자:손은경 사업자등록번호: 000-00-00000 개인정보관리책임자:OOO 통신판매번호:0000</small></p>
-  <p><small>경기도 고양시 일산동구 장항동</small></p>
+  <p><small>상호:Persona 대표자:(주)Persona 사업자등록번호: 101-204-1999 개인정보관리책임자:OOO 통신판매번호:0000</small></p>
+  <p><small>경기도 의정부시 신곡2동</small></p>
   <p><small>Copyright (c) DESIGN All rights reserved</small></p>
 </div>
 
